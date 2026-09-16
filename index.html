@@ -1,401 +1,608 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" data-theme="light">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Profil</title>
+  <title>Toni Ismail — Software Engineer, Backend &amp; IAM</title>
+  <meta name="description" content="Software Engineer dengan hampir 4 tahun pengalaman membangun backend enterprise di PT Pupuk Sriwidjaja Palembang. Spesialis Identity &amp; Access Management, Go, dan NestJS.">
+  <meta name="author" content="Toni Ismail">
+  <meta name="theme-color" content="#ffffff">
 
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Toni Ismail — Software Engineer, Backend & IAM">
+  <meta property="og:description" content="Membangun platform Single Sign-On untuk 50+ aplikasi dan 3.000+ pengguna. Go, NestJS, Keycloak.">
+  <meta property="og:url" content="https://toniismail12.github.io">
+  <meta property="og:image" content="https://toniismail12.github.io/assets/img/profile.jpg">
+  <meta property="og:locale" content="id_ID">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="canonical" href="https://toniismail12.github.io">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230e8a63'/%3E%3Cstop offset='1' stop-color='%231257c9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Georgia,serif' fill='%23ffffff' text-anchor='middle'%3ET%3C/text%3E%3C/svg%3E">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 
+  <!-- Pasang tema sebelum halaman digambar, supaya tidak berkedip.
+       Bawaannya terang; gelap hanya kalau pengunjung menekan tombol. -->
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("theme") === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        }
+      } catch (e) { /* biarkan default terang */ }
+    })();
+  </script>
+
+  <!-- Data terstruktur, supaya Google menampilkan profil dengan benar. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Toni Ismail",
+    "jobTitle": "Software Engineer — Backend & Identity and Access Management",
+    "worksFor": { "@type": "Organization", "name": "PT Pupuk Sriwidjaja Palembang" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Palembang", "addressRegion": "Sumatera Selatan", "addressCountry": "ID" },
+    "email": "toniismailwork@gmail.com",
+    "url": "https://toniismail12.github.io",
+    "sameAs": [
+      "https://github.com/toniismail12",
+      "https://www.linkedin.com/in/toni-ismail-z",
+      "https://ismail-laundry.com"
+    ],
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universitas Muhammadiyah Palembang" },
+    "knowsAbout": ["Golang", "NestJS", "Keycloak", "OAuth 2.0", "OpenID Connect", "PostgreSQL", "Docker"]
+  }
+  </script>
 </head>
 
 <body>
 
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-  <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <a class="skip-link" href="#beranda">Lompat ke konten</a>
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Team</span></a></li>
-       
-      </ul>
-    </nav><!-- .nav-menu -->
+  <!-- ===== Header ===== -->
+  <header class="site-header" id="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#beranda">
+        <span class="brand-mark" aria-hidden="true">T</span>
+        <span class="brand-name">Toni Ismail</span>
+      </a>
 
-  </header><!-- End Header -->
+      <nav class="nav" id="nav" aria-label="Navigasi utama">
+        <a href="#proyek">Proyek</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Toni Ismail</h1>
-      <p>Aku <span class="typed" data-typed-items="Mahasiswa, Teknologi, Informasi"></span></p>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="github"><i class="bx bxl-github"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      <div class="header-actions">
+        <a class="btn btn-sm btn-primary header-cv" href="assets/cv/Toni-Ismail-CV-ID.pdf" download>Unduh CV</a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Ganti tema terang / gelap">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M21.5 12h-2.6M5.1 12H2.5M18.7 5.3l-1.8 1.8M7.1 16.9l-1.8 1.8M18.7 18.7l-1.8-1.8M7.1 7.1L5.3 5.3"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.3A8.5 8.5 0 1 1 9.7 3.5a7 7 0 0 0 10.8 10.8z"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
       </div>
     </div>
-  </section><!-- End Hero -->
+  </header>
 
-  <main id="main">
+  <main>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="beranda">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Hallo, namaku Toni Ismail, biasanya dengan teman-temanku dipanggil Toni. Asal daerah ku dari ds. Margo Sugihan, Kec. Muara Padang, Kab. Banyuasin, Sumsel. Bahasa sehari - hariku menggunakan bahasa jawa, jadi mohon maaf ya kalau bahasa indonesia nya lumayan medok. Medok adalah ciri khas orang jawa ketika ngomong bahasa indo.</p>
+        <p class="status">
+          <span class="dot" aria-hidden="true"></span>
+          Development Team Lead di PT Pupuk Sriwidjaja Palembang
+        </p>
+
+        <h1 class="hero-title">
+          Saya membangun pintu masuk
+          <em>identitas &amp; backend</em>
+          untuk sistem yang dipakai ribuan orang tiap hari.
+        </h1>
+
+        <p class="hero-lead">
+          Halo, saya Toni. Hampir empat tahun membangun backend enterprise di industri
+          manufaktur pupuk, dua tahun terakhir memimpin tim enam engineer. Fokus saya
+          <strong>Identity &amp; Access Management</strong> — Keycloak, OAuth 2.0, dan
+          OpenID Connect — di atas <strong>Go</strong> dan <strong>NestJS</strong>.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#proyek">Lihat proyek</a>
+          <a class="btn btn-ghost" href="assets/cv/Toni-Ismail-CV-ID.pdf" download>
+            <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0l-4-4m4 4l4-4M4.5 19.5h15"/></svg>
+            Unduh CV
+          </a>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4">
-            <img src="assets/img/pmmb-2.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3>My Bio</h3>
-            <p class="fst-italic">
-              
+        <ul class="stats">
+          <li class="stat">
+            <p class="stat-num">~4</p>
+            <p class="stat-label">tahun membangun backend enterprise</p>
+          </li>
+          <li class="stat">
+            <p class="stat-num">50<span>+</span></p>
+            <p class="stat-label">aplikasi terhubung Single Sign-On</p>
+          </li>
+          <li class="stat">
+            <p class="stat-num">3.000<span>+</span></p>
+            <p class="stat-label">pengguna aktif memakai SSO</p>
+          </li>
+          <li class="stat">
+            <p class="stat-num">6</p>
+            <p class="stat-label">engineer dalam tim yang dipimpin</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Proyek ===== -->
+    <section class="section" id="proyek">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">01 — Proyek</p>
+          <h2>Yang saya bangun</h2>
+          <p class="section-lead">
+            Lima sistem yang saya rancang dan kirim ke produksi — empat di lingkungan
+            enterprise, satu produk pribadi yang saya operasikan sendiri.
+          </p>
+        </header>
+
+        <div class="cards">
+
+          <article class="card card-wide">
+            <div class="card-top">
+              <div>
+                <p class="card-role">Kontributor inti · desain &amp; implementasi</p>
+                <h3 class="card-title">Enterprise Single Sign-On Platform</h3>
+              </div>
+              <span class="badge badge-green">Flagship</span>
+            </div>
+
+            <p class="card-desc">
+              Satu gerbang identitas untuk seluruh aplikasi internal PT Pusri. Realm, client,
+              dan role mapping Keycloak dirancang sebagai sumber identitas tunggal, menghapus
+              pengelolaan kredensial di tiap aplikasi. Alur Authorization Code dan validasi JWT
+              distandardisasi di sisi resource server, lengkap dengan refresh token,
+              session validation, dan single logout.
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>12 Februasi 2000</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://toni-ismail.blogspot.com/</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>0822 89825 089</span></li>
-                  
-                </ul>
+
+            <ul class="bullets">
+              <li><strong>Passkeys/WebAuthn</strong> dan <strong>OTP via WhatsApp</strong> sebagai faktor login alternatif untuk pengguna non-desktop.</li>
+              <li>RBAC dipetakan ke struktur organisasi — unit kerja dan jabatan — sehingga otorisasi mengikuti hierarki perusahaan tanpa konfigurasi manual.</li>
+              <li>Diperluas ke IAM mobile dan portal web IAM dengan kebijakan otorisasi yang sama.</li>
+            </ul>
+
+            <ul class="metrics">
+              <li><b>50+</b> aplikasi terintegrasi</li>
+              <li><b>3.000+</b> pengguna aktif</li>
+              <li><b>46</b> endpoint</li>
+            </ul>
+
+            <ul class="tags">
+              <li>Go 1.24</li><li>Keycloak</li><li>gocloak v13</li><li>OpenID Connect</li>
+              <li>OAuth 2.0</li><li>JWT</li><li>WebAuthn</li><li>GORM</li><li>SQL Server</li><li>Docker</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <div>
+                <p class="card-role">Solo full-stack developer &amp; product owner</p>
+                <h3 class="card-title">Ismail Laundry</h3>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Programmer Magang</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Github</strong> <span>https://github.com/toniismail12</span></li>
-                </ul>
-              </div>
+              <span class="badge badge-live"><span class="live-dot" aria-hidden="true"></span> Live</span>
             </div>
-            <p>
-              jangan lupa kunjungi websitnya dan juga silahkan cek akun github nya ya.
+
+            <p class="card-desc">
+              Produk pribadi yang saya desain, bangun, rilis, dan operasikan sendiri:
+              order &amp; invoice, cicilan bertahap, harga per layanan, loyalitas &amp; promo,
+              pickup request dengan chat, pembukuan, sampai absensi karyawan berbasis GPS.
             </p>
-          </div>
-        </div>
 
+            <ul class="bullets">
+              <li>Security review mandiri dengan <strong>17 temuan berperingkat</strong> (Critical → Low) — IDOR, arbitrary file read, mass assignment — lalu diremediasi lewat roadmap per sprint.</li>
+              <li>Tooling migrasi bermode <code>--dry</code> / <code>--diff</code> / <code>--sync</code> / <code>--apply</code>, jadi migrasi produksi selalu bisa diperiksa sebelum dieksekusi.</li>
+              <li>Sembilan skrip smoke test per domain sebagai jaring regresi sebelum rilis.</li>
+            </ul>
+
+            <ul class="metrics">
+              <li><b>80+</b> pelanggan aktif</li>
+              <li><b>950+</b> transaksi</li>
+              <li><b>48</b> halaman</li>
+            </ul>
+
+            <ul class="tags">
+              <li>Next.js 16</li><li>React 19</li><li>TypeScript</li><li>Prisma 6</li>
+              <li>PostgreSQL</li><li>Tailwind 4</li><li>Cloudflare R2</li><li>Vercel</li>
+            </ul>
+
+            <a class="card-link" href="https://ismail-laundry.com" target="_blank" rel="noopener">
+              ismail-laundry.com
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <div>
+                <p class="card-role">Backend engineer · kontributor inti</p>
+                <h3 class="card-title">Portal Logistik API</h3>
+              </div>
+            </div>
+
+            <p class="card-desc">
+              Layanan modular-monolith yang menopang pengadaan end-to-end: usulan,
+              evaluasi teknis vendor (EVTEK), penetapan pemenang, monitoring SLA,
+              hingga integrasi SAP.
+            </p>
+
+            <ul class="bullets">
+              <li>Modul <strong>EVTEK</strong> dibangun penuh — pengajuan, penugasan evaluator berbasis role, penilaian, penetapan pemenang — mendigitalkan proses yang sebelumnya berbasis dokumen.</li>
+              <li><strong>Kong API Gateway</strong> di depan backend untuk autentikasi terpusat, rate limiting, routing, dan observability.</li>
+              <li>Middleware audit logging merekam tiap request beserta identitas pemanggil sebagai jejak investigasi insiden.</li>
+            </ul>
+
+            <ul class="metrics">
+              <li><b>338</b> endpoint REST</li>
+              <li><b>54</b> domain model</li>
+              <li><b>26</b> modul</li>
+            </ul>
+
+            <ul class="tags">
+              <li>Go</li><li>GoFiber</li><li>GORM</li><li>Redis</li><li>Kong</li>
+              <li>Docker</li><li>GitLab CI/CD</li><li>SonarQube</li><li>SAP</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <div>
+                <p class="card-role">Lead engineer · backend architect</p>
+                <h3 class="card-title">SIIRU — Monitoring Investasi Rutin</h3>
+              </div>
+            </div>
+
+            <p class="card-desc">
+              Alur investasi rutin end-to-end: usulan → realisasi → disbursement →
+              relokasi anggaran, dengan tabel riwayat terpisah yang merekam jejak audit
+              setiap perubahan nilai.
+            </p>
+
+            <ul class="bullets">
+              <li>Redis caching pada endpoint dashboard dan master data agregat untuk menekan beban query berulang di PostgreSQL.</li>
+              <li>Ekspor Excel &amp; PDF, plus unggah berkas ke S3/MinIO lewat <strong>presigned URL</strong> — berkas besar tidak melewati server aplikasi.</li>
+              <li>Pengujian Jest unit + e2e (Supertest) dan dokumentasi OpenAPI interaktif untuk seluruh endpoint.</li>
+            </ul>
+
+            <ul class="metrics">
+              <li><b>68</b> endpoint REST</li>
+              <li><b>12</b> modul domain</li>
+              <li><b>4–5 bln</b> ke produksi</li>
+            </ul>
+
+            <ul class="tags">
+              <li>NestJS 11</li><li>TypeScript</li><li>Prisma 6</li><li>PostgreSQL</li>
+              <li>Redis</li><li>MinIO / S3</li><li>Jest</li><li>Docker Compose</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-top">
+              <div>
+                <p class="card-role">Lead engineer · arsitektur &amp; implementasi</p>
+                <h3 class="card-title">SIHPP — Sistem Harga Pokok Produksi</h3>
+              </div>
+            </div>
+
+            <p class="card-desc">
+              Backend perhitungan harga pokok produksi untuk tiga lini produk —
+              Urea, Amoniak, NPK — mencakup proyeksi versus realisasi produksi dan
+              seluruh komponen biaya: biaya tetap, bahan baku, utilitas, ratio rendal,
+              serta biaya usaha dan keuangan.
+            </p>
+
+            <ul class="bullets">
+              <li>Arsitektur berlapis <strong>handler–service–repository</strong> dengan envelope respons JSON konsisten, sehingga menambah modul produk baru tidak menyentuh kode modul lain.</li>
+              <li>Migrasi skema dan seeding master data berjalan otomatis saat startup — tidak ada langkah setup manual di environment baru.</li>
+              <li>Swagger UI dengan <em>Try it out</em> sebagai kontrak API resmi bagi tim frontend.</li>
+            </ul>
+
+            <ul class="metrics">
+              <li><b>17</b> modul handler</li>
+              <li><b>3</b> lini produk</li>
+              <li><b>4–5 bln</b> ke produksi</li>
+            </ul>
+
+            <ul class="tags">
+              <li>Go 1.23</li><li>Fiber v2</li><li>GORM</li><li>SQL Server</li>
+              <li>SSO Keycloak</li><li>JWT</li><li>Swagger</li><li>Docker</li>
+            </ul>
+          </article>
+
+        </div>
       </div>
-    </section><!-- End About Section -->
+    </section>
 
+    <!-- ===== Pengalaman ===== -->
+    <section class="section section-alt" id="pengalaman">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">02 — Perjalanan</p>
+          <h2>Pengalaman &amp; pendidikan</h2>
+        </header>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
+        <div class="split">
 
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Ya sebenernya gak hebat sih, masih tahap belajar. Tapi insyaallah bisa laah</p>
-        </div>
+          <div class="split-main">
+            <h3 class="sub">Pengalaman kerja</h3>
 
-        <div class="row skills-content">
+            <p class="company">
+              PT Pupuk Sriwidjaja Palembang <span>(PUSRI)</span>
+            </p>
 
-          <div class="col-lg-6">
+            <ol class="timeline">
+              <li class="timeline-item is-current">
+                <p class="timeline-when">Agustus 2024 — Sekarang</p>
+                <h4 class="timeline-role">Development Team Lead</h4>
+                <ul class="bullets">
+                  <li>Memimpin tim enam engineer sepanjang siklus SDLC — perencanaan sprint, code review, hingga rilis produksi — untuk empat aplikasi enterprise: SIHPP, SIIRU, REKON, dan SI DENDA.</li>
+                  <li>Menetapkan standar rekayasa lintas tim: arsitektur berlapis, envelope respons JSON konsisten, dan dokumentasi OpenAPI wajib per layanan — memangkas waktu onboarding dan menghilangkan ambiguitas kontrak API dengan tim frontend.</li>
+                  <li>Merancang pipeline GitLab CI/CD empat tahap untuk tiga branch environment, mengubah rilis manual menjadi deployment otomatis di mana setiap merge wajib melewati quality gate SonarQube.</li>
+                  <li>Mengarsiteki dua sistem greenfield dari nol hingga produksi — SIHPP dan SIIRU — keduanya go-live dalam 4–5 bulan.</li>
+                  <li>Menerjemahkan kebutuhan unit Rendal, Keuangan, dan Logistik menjadi spesifikasi teknis; memimpin requirement gathering dan UAT bersama pengguna kunci.</li>
+                </ul>
+              </li>
 
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
+              <li class="timeline-item">
+                <p class="timeline-when">Desember 2022 — Juli 2024</p>
+                <h4 class="timeline-role">Software Engineer</h4>
+                <ul class="bullets">
+                  <li>Membangun Portal Logistik API dengan Go, GoFiber, dan GORM — 338 endpoint REST dan 54 domain model yang menopang pengadaan end-to-end.</li>
+                  <li>Mengimplementasikan autentikasi terpusat berbasis Keycloak, menggantikan login terpisah di 50+ aplikasi menjadi satu identitas SSO bagi 3.000+ pengguna internal.</li>
+                  <li>Menempatkan Kong API Gateway di depan layanan backend untuk sentralisasi autentikasi, rate limiting, dan observability.</li>
+                  <li>Membangun otomasi operasional: reminder terjadwal untuk tugas yang melewati SLA, serta ekspor laporan Excel dan PDF.</li>
+                  <li>Mengembangkan layanan pendukung IAM sebagai microservices Go terpisah — encrypt, email, queue, sinkronisasi data.</li>
+                </ul>
+              </li>
+            </ol>
           </div>
 
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
+          <aside class="split-side">
+            <h3 class="sub">Pendidikan</h3>
+            <div class="mini-card">
+              <p class="mini-when">Lulus 2022</p>
+              <h4 class="mini-title">S1 Teknologi Informasi</h4>
+              <p class="mini-org">Universitas Muhammadiyah Palembang</p>
             </div>
 
-            <div class="progress">
-              <span class="skill">Laravel 8 <i class="val">77%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
+            <h3 class="sub sub-spaced">Sertifikasi</h3>
+            <ol class="certs">
+              <li>
+                <p class="cert-year">Mei 2026</p>
+                <p class="cert-name">AI Training for Product &amp; Service Prototyping</p>
+                <p class="cert-org">Skyletica Labs</p>
+              </li>
+              <li>
+                <p class="cert-year">Agustus 2023</p>
+                <p class="cert-name">React JS — Web Front End Development</p>
+                <p class="cert-org">SanberCode</p>
+              </li>
+              <li>
+                <p class="cert-year">Desember 2022</p>
+                <p class="cert-name">Golang Backend Development</p>
+                <p class="cert-org">SanberCode</p>
+              </li>
+              <li>
+                <p class="cert-year">September 2022</p>
+                <p class="cert-name">React Native Expo — Multiplatform Mobile App</p>
+                <p class="cert-org">Udemy</p>
+              </li>
+            </ol>
 
-            <div class="progress">
-              <span class="skill">Editing(corelDraw, Adobe Premiere Pro, Adobe Audition) <i class="val">93%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
+            <h3 class="sub sub-spaced">Cara kerja</h3>
+            <p class="side-note">
+              Agile/Scrum — sprint planning, estimasi, daily standup, retrospective,
+              code review, dan mentoring teknis. Terbuka untuk onsite, hybrid, maupun remote.
+            </p>
+          </aside>
 
         </div>
-
       </div>
-    </section><!-- End Skills Section -->
+    </section>
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
+    <!-- ===== Keahlian ===== -->
+    <section class="section" id="keahlian">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">03 — Keahlian</p>
+          <h2>Perkakas yang saya pakai</h2>
+        </header>
 
-        <div class="section-title">
-          <h2>Resume</h2>
-          <center>
-          <p class="col-lg-8">Saya masih mahasiswa, program studi teknologi inforamasi. saat ini sudah semester 7. semester akhir yang penuh dengan tantangan. Okey, lanjut cek resume.</p></center>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Toni Ismail</h4>
-              <p><em>Saya memiliki semangat yang tinggi, walau kadang juga ada malesnya dikit. Saya yakin suatu hal yang hebat diawali dari hal yang sederhana. </em></p>
-              <ul>
-                <li>Ds, Margo Sugihan</li>
-                <li>0822 8982 5089</li>
-                
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Bootcamp Laravel 8 Web Development, Batch 2 2021 </h4>
-              <h5>November - Desember (Now)</h5>
-              <p><em>Sanbercode, PT. Syberindo</em></p>
-              <p>Laravel merupakan framework berbasis PHP yang sangat populer, cepat, dan mudah dalam membuat website custom sesuai dengan kebutuhan dan keinginan.</p>
-            </div>
-            <div class="resume-item">
-              <h4>SMA Muhammadiyah 1 Muara Padang</h4>
-              <h5>20-- - 20--</h5>
-              <p><em>SMA Muhammadiyah 1 Muara Padang</em></p>
-              <p>Sekolah Muhammadiyah di daerah muara padang. kab banyuasin. jurusan IPS (anak IPS).</p>
-            </div>
+        <div class="skills">
+          <div class="skill-group">
+            <p class="skill-label">Bahasa pemrograman</p>
+            <ul class="tags">
+              <li>Go</li><li>TypeScript</li><li>JavaScript</li><li>PHP</li><li>Python</li><li>SQL</li>
+            </ul>
           </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>WEB Pendaftaran Siswa Baru</h4>
-              <h5>2018</h5>
-              <p><em> Web di SMA Muhammadiyah </em></p>
-              <ul>
-                <li>SISTEM INFORMASI PENERIMAAN SISWA BARU BERBASIS WEB DI SMA MUHAMMADIYAH 1 MUARA PADANG WEB-BASED NEW STUDENT ADMISSION INFORMATION SYSTEM IN SMA MUHAMMADIYAH 1 MUARA PADANG</li>
-                  <li><a href="https://www.researchgate.net/publication/354683478_SISTEM_INFORMASI_PENERIMAAN_SISWA_BARU_BERBASIS_WEB_DI_SMA_MUHAMMADIYAH_1_MUARA_PADANG_WEB-BASED_NEW_STUDENT_ADMISSION_INFORMATION_SYSTEM_IN_SMA_MUHAMMADIYAH_1_MUARA_PADANG"> Click Disini</a> </li>
 
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Arduino Uno, SISTEM BILLING PLAYSTATION</h4>
-              <h5>2019</h5>
-              <p><em>Perancangan Alat </em></p>
-              <ul>
-                <li>PERANCANGAN SISTEM BILLING PLAYSTATION BERBASIS ARDUINO-BASED PLAYSTATION BILLING SYSTEM DESIGN.</li>
-                <li><a href="https://www.researchgate.net/publication/338993226_PERANCANGAN_SISTEM_BILLING_PLAYSTATION_BERBASIS_ARDUINO-BASED_PLAYSTATION_BILLING_SYSTEM_DESIGN"> Click Disini</a></li>
-                
-              </ul>
-            </div>
-             <div class="resume-item">
-              <h4>Learning Center App</h4>
-              <h5>In Progres (November 2021 - Maret 2022) Now</h5>
-              <p><em>di PT. Pusri Palembang </em></p>
-              <ul>
-                <li>Learning Center App di PT Pusri Palembang. Merupakan Aplikasi Berbasis Website yang mengelola TNA (Training Need Analisis)</li>
-                
-                
-              </ul>
-            </div>
+          <div class="skill-group">
+            <p class="skill-label">Backend &amp; framework</p>
+            <ul class="tags">
+              <li>GoFiber</li><li>NestJS</li><li>Laravel</li><li>Next.js</li><li>Express</li>
+            </ul>
           </div>
-        </div>
 
-      </div>
-    </section><!-- End Resume Section -->
+          <div class="skill-group skill-group-accent">
+            <p class="skill-label">Identity &amp; Access Management</p>
+            <ul class="tags">
+              <li>Keycloak</li><li>OAuth 2.0</li><li>OpenID Connect</li><li>JWT</li>
+              <li>WebAuthn / Passkeys</li><li>RBAC</li><li>SSO</li><li>Single Logout</li><li>OTP WhatsApp</li>
+            </ul>
+          </div>
 
-    <!-- ======= Team Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
+          <div class="skill-group">
+            <p class="skill-label">API &amp; integrasi</p>
+            <ul class="tags">
+              <li>REST API</li><li>OpenAPI / Swagger</li><li>Kong API Gateway</li>
+              <li>SAP</li><li>Webhook</li><li>Google Sheets API</li>
+            </ul>
+          </div>
 
-        <div class="section-title">
-          <h2>Team</h2>
-         
-        </div>
+          <div class="skill-group">
+            <p class="skill-label">Basis data &amp; ORM</p>
+            <ul class="tags">
+              <li>PostgreSQL</li><li>SQL Server</li><li>MySQL</li><li>Redis</li>
+              <li>GORM</li><li>Prisma</li><li>Eloquent</li>
+            </ul>
+          </div>
 
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-hmti">Hmti</li>
-              <li data-filter=".filter-pmmb">Pmmb</li>
-              <li data-filter=".filter-clo">Clothing</li>
-              
+          <div class="skill-group">
+            <p class="skill-label">DevOps &amp; infrastruktur</p>
+            <ul class="tags">
+              <li>Docker</li><li>Docker Compose</li><li>GitLab CI/CD</li><li>SonarQube</li>
+              <li>Nexus Registry</li><li>Nginx</li><li>MinIO / S3</li><li>Cloudflare R2</li><li>Vercel</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <p class="skill-label">Testing &amp; kualitas</p>
+            <ul class="tags">
+              <li>Jest</li><li>Supertest</li><li>Go testing</li><li>Postman</li>
+              <li>Smoke test scripting</li><li>Static analysis</li>
+            </ul>
+          </div>
+
+          <div class="skill-group">
+            <p class="skill-label">Frontend</p>
+            <ul class="tags">
+              <li>React.js</li><li>Next.js</li><li>React Native (Expo)</li><li>Tailwind CSS</li>
             </ul>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+    <!-- ===== Tentang ===== -->
+    <section class="section section-alt" id="tentang">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">04 — Tentang</p>
+          <h2>Sedikit cerita</h2>
+        </header>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-hmti">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/hmti-1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>hmti</h4>
-            
-              </div>
-            </div>
+        <div class="about">
+          <figure class="about-photo">
+            <img src="assets/img/profile.jpg" alt="Foto Toni Ismail" width="800" height="800" loading="lazy" decoding="async">
+          </figure>
+
+          <div class="about-text">
+            <p>
+              Saya lahir dan besar di Desa Margo Sugihan, Kecamatan Muara Padang,
+              Kabupaten Banyuasin, Sumatera Selatan. Bahasa sehari-hari saya Jawa,
+              jadi kalau bahasa Indonesia saya terdengar medok — memang begitu adanya.
+            </p>
+            <p>
+              Dari sana saya kuliah Teknologi Informasi di Palembang, lalu masuk PT Pusri
+              lewat program magang, dan bertahan sampai sekarang memimpin tim. Pekerjaan
+              saya berputar di sekitar satu pertanyaan sederhana: siapa yang boleh masuk,
+              dan boleh melakukan apa.
+            </p>
+            <p>
+              Saya percaya hal besar selalu berangkat dari hal sederhana. Prinsip itu yang
+              saya bawa saat menulis kode: mulai dari yang paling kecil dan benar, baru
+              dikembangkan. Di luar jam kerja, saya mengurus Ismail Laundry — tempat saya
+              belajar jadi developer sekaligus pemilik produk.
+            </p>
+
+            <ul class="links">
+              <li>
+                <a href="https://github.com/toniismail12" target="_blank" rel="noopener">GitHub <span aria-hidden="true">→</span></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/toni-ismail-z" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">→</span></a>
+              </li>
+              <li>
+                <a href="https://ismail-laundry.com" target="_blank" rel="noopener">Ismail Laundry <span aria-hidden="true">→</span></a>
+              </li>
+            </ul>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pmmb">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/pmmb-1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>pmmb</h4>
-         
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pmmb">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/pmmb-2.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>pmmb</h4>
-               
-       
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pmmb">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/pmmb-3.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>pmmb</h4>
-               
-         
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pmmb">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/pmmb-4.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>pmmb</h4>
-               
-     
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-clo">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/clo-1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>clothing</h4>
-             
-          
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-clo">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/clo-2.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>clothing</h4>
-      
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-clo">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/clo-3.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Clothing</h4>
-          
-          
-              </div>
-            </div>
-          </div>
-
-         
-
         </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
 
-  
+    <!-- ===== Momen ===== -->
+    <section class="section" id="momen">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="eyebrow">05 — Momen</p>
+          <h2>Di luar layar</h2>
+          <p class="section-lead">Organisasi kampus dan program magang bersertifikat di PT Pusri.</p>
+        </header>
 
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <h3>Toni Ismail</h3>
-      <p>tidak ada hasil yang bisa diraih secara instan.</p>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="github"><i class="bx bxl-github"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <ul class="gallery">
+          <li><img src="assets/img/portfolio/hmti-1.jpeg" alt="Penyerahan sertifikat kegiatan HMTI" loading="lazy" decoding="async"></li>
+          <li><img src="assets/img/portfolio/pmmb-1.jpeg" alt="Peserta program magang bersertifikat di PT Pusri" loading="lazy" decoding="async"></li>
+          <li><img src="assets/img/portfolio/pmmb-3.jpeg" alt="Sesi kerja bersama tim magang" loading="lazy" decoding="async"></li>
+          <li><img src="assets/img/portfolio/clopmmb.jpeg" alt="Seminar Teknologi Informasi di kampus" loading="lazy" decoding="async"></li>
+        </ul>
       </div>
-     
+    </section>
+
+    <!-- ===== Kontak ===== -->
+    <section class="section contact" id="kontak">
+      <div class="wrap">
+        <div class="contact-card">
+          <p class="eyebrow">06 — Kontak</p>
+          <h2 class="contact-title">Mari bicara soal sistem yang ingin Anda bangun.</h2>
+          <p class="contact-lead">
+            Terbuka untuk peran backend, IAM, atau kepemimpinan teknis —
+            onsite, hybrid, maupun remote. Saya biasanya membalas dalam satu hari kerja.
+          </p>
+
+          <a class="contact-mail" href="mailto:toniismailwork@gmail.com">toniismailwork@gmail.com</a>
+
+          <ul class="social">
+            <li><a href="https://wa.me/6282281072767" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://www.linkedin.com/in/toni-ismail-z" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/toniismail12" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="assets/cv/Toni-Ismail-CV-EN.pdf" download>CV (English)</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-note">
+        &copy; <span id="year">2026</span> Toni Ismail — Palembang, Indonesia.
+      </p>
+      <nav class="footer-nav" aria-label="Navigasi footer">
+        <a href="#proyek">Proyek</a>
+        <a href="#pengalaman">Pengalaman</a>
+        <a href="#keahlian">Keahlian</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#momen">Momen</a>
+      </nav>
     </div>
-  </footer><!-- End Footer -->
+  </footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
- 
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+  <script src="assets/js/main.js" defer></script>
 </body>
 
 </html>
